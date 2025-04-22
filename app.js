@@ -1,10 +1,13 @@
 async function main() {
     try {
        const promise = await fetch('https://byscript.io/api/3commas/cron/get-smart-trades');
-       const result = await promise.json();
-       return console.log('result',result)
+       const kuda = await promise.json();
+        console.log(kuda,'kuda'); 
+        console.log(typeof(kuda));
+        console.log(Object.keys(kuda));
+       return kuda;
     } catch (error) {
-        console.log(error.message)
+        return console.log(error.message)
     }
 }
 
