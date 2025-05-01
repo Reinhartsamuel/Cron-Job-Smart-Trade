@@ -1,6 +1,6 @@
 async function main() {
     try {
-       const promise = await fetch('https://byscript.io/api/3commas/cron/get-smart-trades');
+       const promise = await fetch('https://www.byscript.io/api/3commas/cron/update-market-code');
        const kuda = await promise.json();
         console.log(kuda,'kuda'); 
         console.log(typeof(kuda));
